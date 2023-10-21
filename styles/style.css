@@ -85,7 +85,7 @@ nav {
     align-items: center;
     justify-content: center;
     height: 685px;
-    width: 1440px;
+    width: 100%;
 }
 .container-section1-conteudo {
     display: flex;
@@ -353,7 +353,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 288px;
-    width: 1440px;
+    width: 100%;
 }
 .container-footer-textos{
     height: 144px;
