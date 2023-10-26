@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: led_dot_font;
-    src: url(../typography/led_dot_matrix/LED\ Dot-Matrix.ttf);
+    src: url(typography/led_dot_matrix/LED\ Dot-Matrix.ttf);
 }
 
 @font-face {
     font-family: inter_font;
-    src: url(../typography/inter/Inter-Regular.ttf);
+    src: url(typography/inter/Inter-Regular.ttf);
 }
 
 @font-face {
     font-family: poppins_font;
-    src: url(../typography/Poppins/Poppins-Regular.ttf);
+    src: url(typography/Poppins/Poppins-Regular.ttf);
 }
 
 /* Navbar */
