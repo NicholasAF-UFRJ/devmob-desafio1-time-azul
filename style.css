@@ -17,11 +17,12 @@
 
 /* Navbar */
 
-@import url();
-
 nav {
     background-color: black;
     height: 107px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .container-navbar{
     display: flex;
@@ -34,7 +35,6 @@ nav {
     display: flex;
     align-items: center;
     height: 67px;
-    margin-left: 108px;
     text-align: center;
     width: 145px;
 }
@@ -85,13 +85,13 @@ nav {
     align-items: center;
     justify-content: center;
     height: 685px;
-    width: 1440px;
 }
 .container-section1-conteudo {
     display: flex;
     flex-direction: column;
     height: 282px;
     width: 840px;
+    margin-top: -34px;
 }
 .section1-textos {
     text-align: center;
@@ -145,7 +145,6 @@ nav {
 .section1-botoes-texto {
     cursor: pointer;
 }
-
 
 /* Section 2 */
 
@@ -353,9 +352,9 @@ footer {
     align-items: center;
     justify-content: center;
     height: 288px;
-    width: 1440px;
 }
 .container-footer-textos{
+    background-color: #EDEDED;
     height: 144px;
     width: 306px;
     display: flex;
