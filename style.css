@@ -358,21 +358,13 @@ body {
 /* Footer */
 
 footer {
+    width: 100%;
     background-color: #EDEDED;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 288px;
-}
-
-.container-footer-textos {
-    background-color: #EDEDED;
-    height: 144px;
-    width: 306px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .container-footer-texto-superior {
