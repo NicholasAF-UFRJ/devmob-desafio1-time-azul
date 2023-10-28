@@ -100,7 +100,7 @@ nav {
 }
 
 .nossos-projetos {
-    width: 840px;
+    width: 100%;
     color: var(--Primary---Seasalt, #F9F9F9);
     text-align: center;
     font-family: Poppins;
@@ -108,20 +108,19 @@ nav {
     font-style: normal;
     font-weight: 700;
     line-height: 82.5px;
-    /* 142.241% */
     text-transform: capitalize;
-    margin-top: 8%;
-    margin-bottom: 5%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 .all-projects {
     display: flex;
-    width: 1224px;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 109px 24px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
     flex-wrap: wrap;
-    margin-bottom: 20%;
+    margin-bottom: 50px;
 }
 
 .container-project {
@@ -131,15 +130,9 @@ nav {
     gap: 20px;
 }
 
-.project-image-logo {
-    width: 600px;
-    height: 400px;
-}
-
 .project-image {
-    width: 600px;
-    height: 400px;
-    flex-shrink: 0;
+    width: 100%;
+    height: auto;
 }
 
 .project-logo {
@@ -182,21 +175,13 @@ nav {
 /* Footer */
 
 footer {
+    width: 100%;
     background-color: #EDEDED;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 288px;
-    width: 100%;
-}
-
-.container-footer-textos {
-    height: 144px;
-    width: 306px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .container-footer-texto-superior {

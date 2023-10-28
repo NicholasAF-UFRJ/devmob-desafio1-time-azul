@@ -201,21 +201,13 @@ nav {
 /* Footer */
 
 footer {
+    width: 100%;
     background-color: #EDEDED;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 288px;
-    width: 100%;
-}
-
-.container-footer-textos {
-    height: 144px;
-    width: 306px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .container-footer-texto-superior {
