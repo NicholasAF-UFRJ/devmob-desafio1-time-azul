@@ -156,7 +156,7 @@ body {
 /* Section serviços */
 
 .servicos-section {
-    height: 740px;
+    width: 100%;
     display: block;
     align-items: center;
     justify-content: center;
@@ -303,7 +303,7 @@ body {
 
 .patrocinadores-section {
     background-color: #202020;
-    height: 740px;
+    /* height: 740px; */
     padding-top: 70px;
     padding-bottom: 70px;
     display: block;
@@ -334,7 +334,7 @@ body {
 }
 
 .patrocinadores-cards {
-    height: 475px;
+    /* height: 475px; */
     display: flex;
     justify-content: space-evenly;
     margin-top: 72px;
@@ -398,4 +398,15 @@ footer {
     font-size: 20px;
     font-weight: 500;
     line-height: 24.2px;
+}
+
+@media (max-width: 768px) {
+
+    .servicos-cards,
+    .patrocinadores-cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.3rem;
+    }
 }
