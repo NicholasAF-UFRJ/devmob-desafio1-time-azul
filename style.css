@@ -79,49 +79,34 @@ body {
 
 /* Header */
 
-/* Section 1 */
+/* Section apresentação */
 
-.container-section1 {
+.apresentacao-section {
     color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 685px;
 }
 
-.container-section1-conteudo {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 282px;
-    width: 100%;
-}
-
-.container-section1-conteudo h1 {
+.apresentacao-section h1 {
     font-family: poppins_font;
     font-size: 58px;
     font-weight: 700;
     line-height: 41px;
 }
 
-.container-section1-conteudo p {
+.apresentacao-section p {
     font-family: inter_font;
     font-size: 24px;
+    text-align: center;
     line-height: 42px;
+    width: 60%;
     margin-top: 2rem;
 }
 
-#section1-texto-linha1::after {
-    content: "\a";
-    white-space: pre;
-}
-
-#section1-texto-linha2::after {
-    content: "\a";
-    white-space: pre;
-}
-
-.section1-botoes {
+.apresentacao-botoes {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -200,7 +185,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 475px;
-    width: 348px;
+    width: 22rem;
     gap: 2.5rem;
     background-color: black;
 }
@@ -303,7 +288,6 @@ body {
 
 .patrocinadores-section {
     background-color: #202020;
-    /* height: 740px; */
     padding-top: 70px;
     padding-bottom: 70px;
     display: block;
@@ -334,7 +318,6 @@ body {
 }
 
 .patrocinadores-cards {
-    /* height: 475px; */
     display: flex;
     justify-content: space-evenly;
     margin-top: 72px;
@@ -345,7 +328,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 450px;
-    width: 350px;
+    width: 22rem;
     background-color: black;
 }
 
@@ -408,5 +391,29 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 1.3rem;
+    }
+
+    .servico-card,
+    .patrocinador-card {
+        width: 19rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .apresentacao-botoes {
+        flex-direction: column;
+    }
+
+    .apresentacao-section h1 {
+        font-family: poppins_font;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 41px;
+    }
+
+    .apresentacao-section p {
+        font-size: large;
+        text-align: justify;
+        width: 80%;
     }
 }
