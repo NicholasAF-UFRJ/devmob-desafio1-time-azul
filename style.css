@@ -153,9 +153,9 @@ body {
     padding: 20px 22px 20px 22px;
 }
 
-/* Section 2 */
+/* Section serviços */
 
-.container-section2 {
+.servicos-section {
     height: 740px;
     display: block;
     align-items: center;
@@ -165,13 +165,13 @@ body {
     padding-bottom: 70px;
 }
 
-.container-section2 header {
+.servicos-section header {
     display: block;
     justify-content: center;
     text-align: center;
 }
 
-.container-section2 header h3 {
+.servicos-section header h3 {
     color: #868686;
     font-family: inter_font;
     font-size: large;
@@ -179,7 +179,7 @@ body {
     line-height: 46.5px;
 }
 
-.container-section2 header h1 {
+.servicos-section header h1 {
     color: #F9F9F9;
     font-family: inter_font;
     font-size: xx-large;
@@ -187,14 +187,14 @@ body {
     line-height: 82.5px;
 }
 
-.section2-cards {
+.servicos-cards {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
     margin-top: 72px;
 }
 
-.section2-card {
+.servico-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,24 +205,7 @@ body {
     background-color: black;
 }
 
-.section2-cards-container-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section2-cards-container-img-img {
-    background-color: #404040;
-    /* Rever essa cor pq não sei qual é */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
-    width: 65px;
-    opacity: 0.9;
-}
-
-.section2-card h3 {
+.servico-card h3 {
     color: #F9F9F9;
     font-family: poppins_font;
     font-size: 20px;
@@ -232,7 +215,7 @@ body {
     /* margin-top: 40px; */
 }
 
-.section2-card p {
+.servico-card p {
     color: #868686;
     font-family: inter_font;
     font-size: 18px;
@@ -243,20 +226,7 @@ body {
     /* margin-top: 40px; */
 }
 
-.section2-cards-container2 {
-    background-color: black;
-    height: 475px;
-    width: 348px;
-    display: flex;
-    justify-content: center;
-}
-
-.section2-cards-container2-conteudo {
-    margin-top: 62px;
-    text-align: center;
-}
-
-.section2-cards-container-img {
+.servico-card-container-img {
     background-color: #404040;
     /* Rever essa cor pq não sei qual é */
     display: flex;
@@ -267,82 +237,9 @@ body {
     opacity: 0.9;
 }
 
-.section2-cards-container2-conteudo-caixa h3 {
-    color: #F9F9F9;
-    font-family: poppins_font;
-    font-size: 20px;
-    font-weight: 500;
-    height: 17px;
-    width: 293px;
-    margin-top: 40px;
-}
+/* Section bandejapp  */
 
-.section2-cards-container2-conteudo-caixa p {
-    color: #868686;
-    font-family: inter_font;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 32px;
-    height: 173px;
-    width: 296px;
-    margin-top: 40px;
-}
-
-
-.section2-cards-container3 {
-    background-color: black;
-    height: 475px;
-    width: 348px;
-    display: flex;
-    justify-content: center;
-}
-
-.section2-cards-container3-conteudo {
-    margin-top: 62px;
-    text-align: center;
-}
-
-.section2-cards-container3-conteudo-caixa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section2-cards-container3-conteudo-caixa-img {
-    background-color: #404040;
-    /* Rever essa cor pq não sei qual é */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
-    width: 65px;
-    opacity: 0.9;
-}
-
-.section2-cards-container3-conteudo-caixa h3 {
-    color: #F9F9F9;
-    font-family: poppins_font;
-    font-size: 20px;
-    font-weight: 500;
-    height: 17px;
-    width: 293px;
-    margin-top: 40px;
-}
-
-.section2-cards-container3-conteudo-caixa p {
-    color: #868686;
-    font-family: inter_font;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 32px;
-    height: 173px;
-    width: 296px;
-    margin-top: 40px;
-}
-
-/* Section 3 */
-
-.container-section3 {
+.bandejapp-section {
     width: 100%;
     height: 800px;
     background-color: black;
@@ -360,7 +257,6 @@ body {
     height: 500px;
     color: white;
 }
-
 
 .bandejapp {
     background-color: var(--Eerie-Black, #202020);
@@ -403,9 +299,9 @@ body {
     padding: 20px 22px 20px 22px;
 }
 
-/* Section 4 */
+/* Section patrocinadores */
 
-.container-section4 {
+.patrocinadores-section {
     background-color: #202020;
     height: 740px;
     padding-top: 70px;
@@ -415,13 +311,13 @@ body {
     justify-content: center;
 }
 
-.container-section4-textos {
+.patrocinadores-section header {
     display: block;
     justify-content: center;
     text-align: center;
 }
 
-.container-section4-textos h3 {
+.patrocinadores-section header h3 {
     color: #868686;
     font-family: inter_font;
     font-size: large;
@@ -429,7 +325,7 @@ body {
     line-height: 46.5px;
 }
 
-.container-section4-textos h1 {
+.patrocinadores-section header h1 {
     color: #F9F9F9;
     font-family: inter_font;
     font-size: xx-large;
@@ -437,14 +333,14 @@ body {
     line-height: 82.5px;
 }
 
-.section4-cards {
+.patrocinadores-cards {
     height: 475px;
     display: flex;
     justify-content: space-evenly;
     margin-top: 72px;
 }
 
-.section4-card {
+.patrocinador-card {
     display: flex;
     justify-content: center;
     align-items: center;
