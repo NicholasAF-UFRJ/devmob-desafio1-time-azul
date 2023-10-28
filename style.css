@@ -15,22 +15,17 @@
     src: url(typography/Poppins/Poppins-Regular.ttf);
 }
 
-/* Navbar */
-
-nav {
+body {
     background-color: black;
-    height: 107px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
+/* Navbar */
 .container-navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 107px;
-    width: 1224px;
+    gap: 14rem;
 }
 
 .container-navbar-header-left {
@@ -87,7 +82,6 @@ nav {
 /* Section 1 */
 
 .container-section1 {
-    background-color: black;
     color: white;
     display: flex;
     align-items: center;
@@ -98,29 +92,23 @@ nav {
 .container-section1-conteudo {
     display: flex;
     flex-direction: column;
-    height: 282px;
-    width: 840px;
-    margin-top: -34px;
-}
-
-.section1-textos {
     text-align: center;
+    height: 282px;
+    width: 100%;
 }
 
-.section1-textos h1 {
+.container-section1-conteudo h1 {
     font-family: poppins_font;
     font-size: 58px;
     font-weight: 700;
     line-height: 41px;
 }
 
-.section1-textos p {
+.container-section1-conteudo p {
     font-family: inter_font;
     font-size: 24px;
     line-height: 42px;
-    height: 101px;
-    width: 808px;
-    margin: 44px 0px 0px 16px;
+    margin-top: 2rem;
 }
 
 #section1-texto-linha1::after {
@@ -134,118 +122,96 @@ nav {
 }
 
 .section1-botoes {
-    height: 52px;
-    width: 410px;
-    margin: 44px 0px 0px 215px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 1.3rem;
 }
 
-.section1-botoes :nth-child(1) {
-    background-color: black;
-    color: #DFDFDF;
-    border: 2px solid #606060;
-    padding: 20px 22px 20px 22px;
-    height: 52px;
-    width: 192px;
-}
-
-.section1-botoes :nth-child(2) {
-    background-color: #EDEDED;
-    color: #404040;
-    padding: 20px 22px 20px 22px;
-    height: 52px;
-    width: 196px;
-    margin-left: 18px;
-}
-
-.section1-botoes-texto {
-    /*cursor: pointer;*/
+#nossos-trabalhos-btn {
+    cursor: pointer;
     color: var(--Text---Platinum, #DFDFDF);
+    font-size: medium;
     text-align: center;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 19px;
-    /* 118.75% */
-    text-transform: capitalize;
+    font-weight: bold;
+    background-color: black;
+    border: 2px solid #606060;
+    width: 196px;
+    padding: 20px 22px 20px 22px;
+}
+
+#solicite-um-servico-btn {
+    cursor: pointer;
+    background-color: #EDEDED;
+    font-size: medium;
+    font-weight: bold;
+    color: #404040;
+    width: 196px;
+    border: 0px;
+    padding: 20px 22px 20px 22px;
 }
 
 /* Section 2 */
 
 .container-section2 {
-    background-color: #202020;
     height: 740px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
+    background-color: #202020;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-.container-section2-conteudo {
-    height: 620px;
-    width: 1224px;
-}
-
-.container-section2-textos {
-    display: flex;
+.container-section2 header {
+    display: block;
     justify-content: center;
     text-align: center;
 }
 
-.section2-textos {
-    height: 73px;
-    width: 569px;
-}
-
-.section2-textos h3 {
+.container-section2 header h3 {
     color: #868686;
     font-family: inter_font;
-    font-size: 17px;
+    font-size: large;
     font-weight: 500;
     line-height: 46.5px;
-    margin-top: -16px;
 }
 
-.section2-textos h1 {
+.container-section2 header h1 {
     color: #F9F9F9;
     font-family: inter_font;
-    font-size: 26px;
+    font-size: xx-large;
     font-weight: 500;
     line-height: 82.5px;
-    margin-top: -10px;
 }
 
 .section2-cards {
-    height: 475px;
-    width: 1224px;
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 72px;
 }
 
-
-.section2-cards-container1 {
-    background-color: black;
+.section2-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 475px;
     width: 348px;
-    display: flex;
-    justify-content: center;
+    gap: 2.5rem;
+    background-color: black;
 }
 
-.section2-cards-container1-conteudo {
-    margin-top: 62px;
-    text-align: center;
-}
-
-.section2-cards-container1-conteudo-caixa {
+.section2-cards-container-img {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.section2-cards-container1-conteudo-caixa-img {
+.section2-cards-container-img-img {
     background-color: #404040;
     /* Rever essa cor pq não sei qual é */
     display: flex;
@@ -256,17 +222,17 @@ nav {
     opacity: 0.9;
 }
 
-.section2-cards-container1-conteudo-caixa h3 {
+.section2-card h3 {
     color: #F9F9F9;
     font-family: poppins_font;
     font-size: 20px;
     font-weight: 500;
     height: 17px;
     width: 293px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
-.section2-cards-container1-conteudo-caixa p {
+.section2-card p {
     color: #868686;
     font-family: inter_font;
     font-size: 18px;
@@ -274,7 +240,7 @@ nav {
     line-height: 32px;
     height: 173px;
     width: 296px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .section2-cards-container2 {
@@ -290,13 +256,7 @@ nav {
     text-align: center;
 }
 
-.section2-cards-container2-conteudo-caixa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section2-cards-container2-conteudo-caixa-img {
+.section2-cards-container-img {
     background-color: #404040;
     /* Rever essa cor pq não sei qual é */
     display: flex;
@@ -398,12 +358,7 @@ nav {
     margin-left: 10%;
     width: 80%;
     height: 500px;
-}
-
-.container-section3-conteudo p {
     color: white;
-    padding-top: 60px;
-    padding-right: 500px;
 }
 
 
@@ -424,26 +379,28 @@ nav {
 
 .container-section3-inferior {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
 }
 
-.container-section3-button {
-    width: 170px;
-    height: 40px;
-    margin-top: 62px;
+.container-section3-inferior p {
+    font-size: large;
+    font-family: inter_font;
+    width: 60%;
+    text-align: justify;
+    line-height: 32px;
 }
 
-.container-section3-button a {
-    text-decoration: none;
-    color: var(--Text---Onyx, #404040);
-    text-align: center;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 19px;
-    text-transform: capitalize;
+#outros-projetos-btn {
+    cursor: pointer;
+    background-color: #EDEDED;
+    font-size: medium;
+    font-weight: bold;
+    color: #404040;
+    width: 220px;
+    border: 0px;
+    padding: 20px 22px 20px 22px;
 }
 
 /* Section 4 */
@@ -451,89 +408,49 @@ nav {
 .container-section4 {
     background-color: #202020;
     height: 740px;
-    display: flex;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: block;
     align-items: center;
     justify-content: center;
 }
 
-.container-section4-conteudo {
-    height: 620px;
-    width: 1224px;
-}
-
 .container-section4-textos {
-    display: flex;
+    display: block;
     justify-content: center;
     text-align: center;
 }
 
-.section4-textos {
-    height: 73px;
-    width: 569px;
-}
-
-.section4-textos h3 {
+.container-section4-textos h3 {
     color: #868686;
     font-family: inter_font;
-    font-size: 17px;
+    font-size: large;
     font-weight: 500;
     line-height: 46.5px;
-    margin-top: -16px;
 }
 
-.section4-textos h1 {
+.container-section4-textos h1 {
     color: #F9F9F9;
     font-family: inter_font;
-    font-size: 26px;
+    font-size: xx-large;
     font-weight: 500;
     line-height: 82.5px;
-    margin-top: -10px;
 }
 
 .section4-cards {
     height: 475px;
-    width: 1224px;
     display: flex;
-    text-align: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 72px;
 }
 
-.section4-cards-container-extern {
+.section4-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 450px;
     width: 350px;
     background-color: black;
-    align-items: center;
-}
-
-.section4-cards-container1 {
-    background-color: black;
-    height: 200px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 120px;
-}
-
-.section4-cards-container2 {
-    background-color: black;
-    height: 200px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 120px;
-}
-
-.section4-cards-container3 {
-    background-color: black;
-    height: 200px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 120px;
 }
 
 #preenchimento {

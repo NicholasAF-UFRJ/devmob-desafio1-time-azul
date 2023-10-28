@@ -10,143 +10,116 @@
 </head>
 
 <body>
-
-
-    <nav>
-        <div class="container-navbar">
-            <div class="container-navbar-header-left">
-                <h1 class="navbar-header-left">PROMOVE</h1>
-            </div>
-            <div class="container-navbar-list-center">
-                <ul class="navbar-list-center">
-                    <li><a href=""> <span class="navbar-list-center-inicio">Início</span></a></li>
-                    <li><a href="pages/teams.html">Time</a></li>
-                    <li><a href="pages/projects.html">Projetos</a></li>
-                </ul>
-            </div>
-            <div class="container-navbar-list-right">
-                <ul class="navbar-list-right">
-                    <li><a href="mailto:promove@dcc.ufrj.br"> <img src="images/Mail-Icon.png"> </a></li>
-                    <li><a href="https://www.linkedin.com"> <img src="images/Linkedin-Icon.png"> </a></li>
-                    <li><a href="https://twitter.com/"> <img src="images/Twitter-Icon.png"> </a></li>
-                    <li><a href="https://www.instagram.com/"> <img src="images/Instagram-Icon.png"> </a></li>
-                </ul>
-            </div>
+    <nav class="container-navbar">
+        <div class="container-navbar-header-left">
+            <h1 class="navbar-header-left">PROMOVE</h1>
+        </div>
+        <div class="container-navbar-list-center">
+            <ul class="navbar-list-center">
+                <li><a href=""> <span class="navbar-list-center-inicio">Início</span></a></li>
+                <li><a href="pages/teams.html">Time</a></li>
+                <li><a href="pages/projects.html">Projetos</a></li>
+            </ul>
+        </div>
+        <div class="container-navbar-list-right">
+            <ul class="navbar-list-right">
+                <li><a href="mailto:promove@dcc.ufrj.br"> <img src="images/Mail-Icon.png"> </a></li>
+                <li><a href="https://www.linkedin.com"> <img src="images/Linkedin-Icon.png"> </a></li>
+                <li><a href="https://twitter.com/"> <img src="images/Twitter-Icon.png"> </a></li>
+                <li><a href="https://www.instagram.com/"> <img src="images/Instagram-Icon.png"> </a></li>
+            </ul>
         </div>
     </nav>
-
-    <header></header>
-    <section class="container-section1">
-        <div class="container-section1-conteudo">
-            <div class="section1-textos">
+    <main class="container-main">
+        <section class="container-section1">
+            <article class="container-section1-conteudo">
                 <h1>ProMove</h1>
                 <p><span id="section1-texto-linha1">Somos um Grupo de Extensão em Desenvolvimento Móvel do
                         Instituto</span><span id="section1-texto-linha2">de Computação (IC) da UFRJ - Universidade
                         Federal</span>do Rio de Janeiro.</p>
-            </div>
-            <div class="section1-botoes">
-                <input class="section1-botoes-texto" type="button" value="Nossos Trabalhos"></input>
-                <input class="section1-botoes-texto" type="button" value="Solicite Um Serviço"></input>
-            </div>
-        </div>
-    </section>
-
-    <section class="container-section2">
-        <div class="container-section2-conteudo">
-            <div class="container-section2-textos">
-                <div class="section2-textos">
-                    <h3>Serviços</h3>
-                    <h1>Como podemos ajudar?</h1>
+                <div class="section1-botoes">
+                    <button id="nossos-trabalhos-btn">Nossos Trabalhos</button>
+                    <button id="solicite-um-servico-btn">Solicite Um Serviço</button>
                 </div>
-            </div>
-            <div class="section2-cards">
-                <div class="section2-cards-container1">
-                    <div class="section2-cards-container1-conteudo">
-                        <div class="section2-cards-container1-conteudo-caixa">
-                            <div class="section2-cards-container1-conteudo-caixa-img">
-                                <img src="images/Section2-Rocket-Icon.png" alt="Imagem de Serviço X">
-                            </div>
-                            <h3>Serviço X</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lectus diam,
-                                volutpat tempus metus condimentum vel. </p>
-                        </div>
+            </article>
+        </section>
+
+        <section class="container-section2">
+            <header class="container-section2-textos">
+                <h3>Serviços</h3>
+                <h1>Como podemos ajudar?</h1>
+            </header>
+            <main class="section2-cards">
+                <div class="section2-card">
+                    <div class="section2-cards-container-img">
+                        <img src="images/Section2-Rocket-Icon.png" alt="Imagem de Serviço X">
                     </div>
-                </div>
-                <div class="section2-cards-container2">
-                    <div class="section2-cards-container2-conteudo">
-                        <div class="section2-cards-container2-conteudo-caixa">
-                            <div class="section2-cards-container2-conteudo-caixa-img">
-                                <img src="images/Section2-Computer-Icon.png" alt="Imagem de Serviço Y">
-                            </div>
-                            <h3>Serviço Y</h3>
-                            <p>Integer id ligula vehicula quam dapibus luctus viverra nec nibh. Donec vel massa neque.
-                                Nunc sollicitudin purus id orci consectetur, ac facilisis mauris tincidunt. Donec et
-                                nisi nisi.</p>
-                        </div>
-                    </div>
+                    <h3>Serviço X</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique lectus diam,
+                        volutpat tempus metus condimentum vel. </p>
                 </div>
 
-                <div class="section2-cards-container3">
-                    <div class="section2-cards-container3-conteudo">
-                        <div class="section2-cards-container3-conteudo-caixa">
-                            <div class="section2-cards-container3-conteudo-caixa-img">
-                                <img src="images/Section2-Terminal-Icon.png" alt="Imagem de Serviço Z">
-                            </div>
-                            <h3>Serviço Z</h3>
-                            <p>Nunc sollicitudin purus id orci consectetur, ac facilisis mauris tincidunt. Donec et nisi
-                                nisi. Fusce porta tempor elit.</p>
-                        </div>
+                <div class="section2-card">
+                    <div class="section2-cards-container-img">
+                        <img src="images/Section2-Computer-Icon.png" alt="Imagem de Serviço Y">
                     </div>
+                    <h3>Serviço Y</h3>
+                    <p>Integer id ligula vehicula quam dapibus luctus viverra nec nibh. Donec vel massa
+                        neque.
+                        Nunc sollicitudin purus id orci consectetur, ac facilisis mauris tincidunt. Donec et
+                        nisi nisi.</p>
+                </div>
+
+                <div class="section2-card">
+                    <div class="section2-cards-container-img">
+                        <img src="images/Section2-Terminal-Icon.png" alt="Imagem de Serviço Z">
+                    </div>
+                    <h3>Serviço Z</h3>
+                    <p>Nunc sollicitudin purus id orci consectetur, ac facilisis mauris tincidunt. Donec et
+                        nisi
+                        nisi. Fusce porta tempor elit.</p>
+                </div>
+            </main>
+        </section>
+
+        <section class="container-section3">
+            <div class="container-section3-conteudo">
+                <div class="bandejapp">
+                    <img id="bandejapp-img" src="images/bandejapp.png">
+                </div>
+                <div class="container-section3-inferior">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Utlopadse minim
+                        veniam, quis nostrud laboris nisi ut aliquip ex ea.</p>
+                    <button id="outros-projetos-btn">
+                        Outros projetos
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container-section3">
-        <div class="container-section3-conteudo">
-            <div class="bandejapp">
-                <img id="bandejapp-img" src="images/bandejapp.png">
-            </div>
-            <div class="container-section3-inferior">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut<br> lopadse minim
-                    veniam, quis nostrud laboris nisi ut aliquip ex ea.</p>
-                <button class="container-section3-button">
-                    <a href="pages/projects.html">Outros Projetos</a>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section class="container-section4">
-        <div class="container-section4-conteudo">
-            <div class="container-section4-textos">
-                <div class="section4-textos">
-                    <h3>Patrocínio</h3>
-                    <h1>Quem nos apoia?</h1>
-                </div>
-            </div>
-            <div class="section4-cards">
-                <div class="section4-cards-container-extern">
-                    <div class="section4-cards-container1">
-                        <img src="images/Section3-img1.png">
-                    </div>
+        <section class="container-section4">
+            <header class="container-section4-textos">
+                <h3 id="patrocinadores">Patrocinadores</h3>
+                <h1 id="quem-nos-apoia">Quem nos apoia?</h1>
+            </header>
+            <main class="section4-cards">
+                <div class="section4-card">
+                    <img src="images/Section3-img1.png">
                 </div>
 
-                <div class="section4-cards-container-extern">
-                    <div class="section4-cards-container2">
-                        <img src="images/Section3-img2.png">
-                    </div>
+                <div class="section4-card">
+                    <img src="images/Section3-img2.png">
                 </div>
 
-                <div class="section4-cards-container-extern">
-                    <div class="section4-cards-container3">
-                        <img src="images/Section3-img3.png">
-                    </div>
+                <div class="section4-card">
+                    <img src="images/Section3-img3.png">
                 </div>
-    </section>
+            </main>
+        </section>
 
-    <div id="preenchimento"></div>
+        <section id="preenchimento"></section>
+    </main>
 
     <footer>
         <div class="container-footer-textos">
@@ -162,3 +135,6 @@
 </body>
 
 </html>
+<script>
+
+</script>
