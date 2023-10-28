@@ -103,7 +103,7 @@ nav {
 }
 
 .nosso-time {
-    width: 840px;
+    width: 100%;
     color: var(--Primary---Seasalt, #F9F9F9);
     text-align: center;
     font-family: Poppins;
@@ -111,20 +111,26 @@ nav {
     font-style: normal;
     font-weight: 700;
     line-height: 82.5px;
-    /* 142.241% */
     text-transform: capitalize;
     margin-top: 8%;
     margin-bottom: 5%;
 }
 
-.pessoas-do-time {
+.row {
     display: flex;
-    width: 1224px;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.pessoas-do-time {
+    display: block;
+    /* width: 1224px; */
     align-items: center;
     align-content: center;
-    gap: 72px 24px;
-    flex-wrap: wrap;
-    margin-bottom: 20%;
+    /* gap: 72px 24px; */
+    /* flex-wrap: wrap; */
+    margin-bottom: 3rem;
 }
 
 .container-pessoa-responsavel {
@@ -241,4 +247,15 @@ footer {
     font-size: 20px;
     font-weight: 500;
     line-height: 24.2px;
+}
+
+@media (max-width: 768px) {
+
+    .row,
+    .pessoas-do-time {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.3rem;
+    }
 }
