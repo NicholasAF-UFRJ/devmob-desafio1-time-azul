@@ -21,6 +21,9 @@ body {
 
 /* Navbar */
 .container-navbar {
+    width: 100%;
+    background-color: black;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

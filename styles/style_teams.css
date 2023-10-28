@@ -33,12 +33,16 @@ nav {
     justify-content: center;
 }
 
+/* Navbar */
 .container-navbar {
+    width: 100%;
+    background-color: black;
+    position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 107px;
-    width: 1224px;
+    gap: 14rem;
 }
 
 .container-navbar-header-left {
