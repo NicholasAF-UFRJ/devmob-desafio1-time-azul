@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-evenly;
     height: 107px;
+    gap: 14rem;
 }
 
 .navbar-header-left {
