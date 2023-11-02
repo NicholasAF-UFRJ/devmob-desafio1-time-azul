@@ -19,69 +19,6 @@ body {
     background-color: black;
 }
 
-/* Navbar */
-.container-navbar {
-    width: 100%;
-    background-color: black;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 107px;
-    gap: 14rem;
-}
-
-.container-navbar-header-left {
-    display: flex;
-    align-items: center;
-    height: 67px;
-    text-align: center;
-    width: 145px;
-}
-
-.navbar-header-left {
-    font-family: led_dot_font;
-    color: #F9F9F9;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 23.03px;
-}
-
-.container-navbar-list-center {
-    width: 253px;
-}
-
-.navbar-list-center {
-    font-family: inter_font;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24.2px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.navbar-list-center li a {
-    color: #F9F9F9;
-    text-decoration: none;
-}
-
-.navbar-list-center-inicio {
-    font-weight: 700;
-}
-
-.container-navbar-list-right {
-    width: 198px;
-}
-
-.navbar-list-right {
-
-    justify-content: space-between;
-    display: flex;
-}
-
-/* Header */
-
 /* Section apresentação */
 
 .apresentacao-section {
@@ -232,7 +169,6 @@ body {
     height: 800px;
     background-color: black;
     display: flex;
-
 }
 
 .container-section3-conteudo {
@@ -249,16 +185,15 @@ body {
 .bandejapp {
     background-color: var(--Eerie-Black, #202020);
     display: flex;
-    height: 480px;
-    padding: 0px 313.621px 0px 313px;
+    /* height: 480px; */
+    padding: 10rem;
     justify-content: center;
     align-items: center;
 }
 
 #bandejapp-img {
     width: 594.206px;
-    height: 142px;
-    flex-shrink: 0;
+    height: auto;
 }
 
 .container-section3-inferior {
@@ -389,16 +324,30 @@ footer {
 @media (max-width: 768px) {
 
     .servicos-cards,
-    .patrocinadores-cards {
+    .patrocinadores-cards,
+    .container-section3-inferior {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1.3rem;
     }
 
+    .container-section3-inferior p {
+        width: 100%;
+    }
+
+    .bandejapp {
+        padding: 8rem;
+    }
+
+    #bandejapp-img {
+        width: 400px;
+        height: auto;
+    }
+
     .servico-card,
     .patrocinador-card {
-        width: 19rem;
+        width: 28rem;
     }
 }
 
@@ -418,5 +367,19 @@ footer {
         font-size: large;
         text-align: justify;
         width: 80%;
+    }
+
+    .servico-card,
+    .patrocinador-card {
+        width: 19rem;
+    }
+
+    .bandejapp {
+        padding: 5rem;
+    }
+
+    #bandejapp-img {
+        width: 200px;
+        height: auto;
     }
 }

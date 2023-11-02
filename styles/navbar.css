@@ -1,0 +1,123 @@
+/* Navbar */
+.container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 107px;
+    gap: 14rem;
+}
+
+.navbar-header-left {
+    font-family: led_dot_font;
+    color: #F9F9F9;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 23.03px;
+}
+
+.navbar-list-center {
+    font-family: inter_font;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.2px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.navbar-list-center li a {
+    color: #F9F9F9;
+    text-decoration: none;
+}
+
+.navbar-list-center-inicio {
+    font-weight: 700;
+}
+
+.navbar-list-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.container-navbar #icon {
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.container-navbar #icon {
+    display: none;
+}
+
+/* Side Navbar */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav li {
+    list-style-type: none;
+}
+
+.sidenav hr {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.sidenav a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media (min-width: 770px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container-navbar {
+        justify-content: space-between;
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+        gap: 2rem;
+    }
+
+    .container-navbar .navbar-list-center,
+    .navbar-list-right {
+        display: none;
+    }
+
+    .container-navbar #icon {
+        display: block;
+    }
+
+    .container-navbar :nth-child(4) {
+        order: 1;
+    }
+}

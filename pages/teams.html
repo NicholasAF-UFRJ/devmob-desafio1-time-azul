@@ -4,34 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/reset_css.css" />
     <link rel="stylesheet" href="../styles/style_teams.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
     <title>ProMove - Nosso Time</title>
 </head>
 
 <body>
-    <nav>
-        <div class="container-navbar">
-            <div class="container-navbar-header-left">
-                <h1 class="navbar-header-left">PROMOVE</h1>
-            </div>
-            <div class="container-navbar-list-center">
-                <ul class="navbar-list-center">
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="teams.html"><span class="navbar-list-center-meio">Time</span></a></li>
-                    <li><a href="projects.html">Projetos</a></li>
-                </ul>
-            </div>
-            <div class="container-navbar-list-right">
-                <ul class="navbar-list-right">
-                    <li><a href="mailto:promove@dcc.ufrj.br"> <img src="../images/Mail-Icon.png"> </a></li>
-                    <li><a href="https://www.linkedin.com"> <img src="../images/Linkedin-Icon.png"> </a></li>
-                    <li><a href="https://twitter.com/"> <img src="../images/Twitter-Icon.png"> </a></li>
-                    <li><a href="https://www.instagram.com/"> <img src="../images/Instagram-Icon.png"> </a></li>
-                </ul>
-            </div>
-        </div>
+    <nav class="container-navbar" id="nav">
+        <h1 class="navbar-header-left">PROMOVE</h1>
+        <ul class="navbar-list-center">
+            <li><a href="../index.html"> <span class="navbar-list-center-inicio">Início</span></a></li>
+            <li><a href="teams.html">Time</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+        </ul>
+        <ul class="navbar-list-right">
+            <li><a href="mailto:promove@dcc.ufrj.br"> <img src="../images/Mail-Icon.png"> </a></li>
+            <li><a href="https://www.linkedin.com"> <img src="../images/Linkedin-Icon.png"> </a></li>
+            <li><a href="https://twitter.com/"> <img src="../images/Twitter-Icon.png"> </a></li>
+            <li><a href="https://www.instagram.com/"> <img src="../images/Instagram-Icon.png"> </a></li>
+        </ul>
+        <span class="icon" id="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </span>
     </nav>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li><a href="../index.html"> <span class="navbar-list-center-inicio">Início</span></a></li>
+        <li><a href="teams.html">Time</a></li>
+        <li><a href="projects.html">Projetos</a></li>
+        <hr>
+        <li>
+            <a href="mailto:promove@dcc.ufrj.br">
+                <img src="../images/Mail-Icon.png">
+                <span>Gmail</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com">
+                <img src="../images/Linkedin-Icon.png">
+                <span>LinkedIn</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/">
+                <img src="../images/Twitter-Icon.png">
+                <span></span>Twitter
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/">
+                <img src="../images/Instagram-Icon.png">
+                <span>Instagram</span>
+            </a>
+        </li>
+    </aside>
 
     <section class="container-teams-main">
         <header class="nosso-time">nosso time</header>
@@ -324,5 +354,5 @@
         <p class="container-footer-texto-inferior">Desenvolvedores Ao Seu Dispor</p>
     </footer>
 </body>
-
+<script src="../script.js"></script>
 </html>
