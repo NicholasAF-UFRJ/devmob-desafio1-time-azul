@@ -13,7 +13,7 @@
 
 <body>
     <nav class="container-navbar" id="nav">
-        <h1 class="navbar-header-left">PROMOVE</h1>
+        <h1 class="navbar-header-left" id="promove">PROMOVE</h1>
         <ul class="navbar-list-center">
             <li><a href="../index.html">Início</a></li>
             <li><a href="teams.html" class="active">Time</a></li>
@@ -354,6 +354,10 @@
         <p class="container-footer-texto-inferior">Desenvolvedores Ao Seu Dispor</p>
     </footer>
 </body>
+<script>
+    document.getElementById('promove').
+        addEventListener('click', () => { window.location = '../index.html'; });
+</script>
 <script src="../script.js"></script>
 
 </html>

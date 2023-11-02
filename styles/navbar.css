@@ -55,6 +55,10 @@
     display: none;
 }
 
+.container-navbar h1 {
+    cursor: pointer;
+}
+
 /* Side Navbar */
 .sidenav {
     height: 100%;

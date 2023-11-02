@@ -13,7 +13,7 @@
 
 <body>
     <nav class="container-navbar" id="nav">
-        <h1 class="navbar-header-left">PROMOVE</h1>
+        <h1 class="navbar-header-left" id="promove">PROMOVE</h1>
         <ul class="navbar-list-center">
             <li><a href="index.html" class="active">Início</a></li>
             <li><a href="pages/teams.html">Time</a></li>
@@ -164,9 +164,11 @@
 
 </html>
 <script>
-    const nossosTrabsBtn = document.getElementById('nossos-trabalhos-btn');
-    const outrosProjetosBtn = document.getElementById('outros-projetos-btn');
-    nossosTrabsBtn.addEventListener('click', () => { window.location = 'pages/projects.html'; })
-    outrosProjetosBtn.addEventListener('click', () => { window.location = 'pages/projects.html'; })
+    document.getElementById('nossos-trabalhos-btn').
+        addEventListener('click', () => { window.location = 'pages/projects.html'; });
+    document.getElementById('outros-projetos-btn').
+        addEventListener('click', () => { window.location = 'pages/projects.html'; });
+    document.getElementById('promove').
+        addEventListener('click', () => { window.location = 'index.html'; });
 </script>
 <script src="script.js"></script>
