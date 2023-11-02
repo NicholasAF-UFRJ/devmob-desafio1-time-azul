@@ -19,66 +19,6 @@ body {
     background-color: black;
 }
 
-/* Navbar */
-.container-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 107px;
-    gap: 14rem;
-}
-
-.container-navbar-header-left {
-    display: flex;
-    align-items: center;
-    height: 67px;
-    text-align: center;
-    width: 145px;
-}
-
-.navbar-header-left {
-    font-family: led_dot_font;
-    color: #F9F9F9;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 23.03px;
-}
-
-.container-navbar-list-center {
-    width: 253px;
-}
-
-.navbar-list-center {
-    font-family: inter_font;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24.2px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.navbar-list-center li a {
-    color: #F9F9F9;
-    text-decoration: none;
-}
-
-.navbar-list-center-inicio {
-    font-weight: 700;
-}
-
-.container-navbar-list-right {
-    width: 198px;
-}
-
-.navbar-list-right {
-
-    justify-content: space-between;
-    display: flex;
-}
-
-/* Header */
-
 /* Section apresentação */
 
 .apresentacao-section {
@@ -229,7 +169,6 @@ body {
     height: 800px;
     background-color: black;
     display: flex;
-
 }
 
 .container-section3-conteudo {
@@ -395,7 +334,7 @@ footer {
 
     .servico-card,
     .patrocinador-card {
-        width: 19rem;
+        width: 28rem;
     }
 }
 
@@ -415,5 +354,10 @@ footer {
         font-size: large;
         text-align: justify;
         width: 80%;
+    }
+
+    .servico-card,
+    .patrocinador-card {
+        width: 19rem;
     }
 }
