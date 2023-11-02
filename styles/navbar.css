@@ -25,6 +25,10 @@
     gap: 1rem;
 }
 
+.active {
+    font-weight: bold;
+}
+
 .navbar-list-center li a {
     color: #F9F9F9;
     text-decoration: none;
